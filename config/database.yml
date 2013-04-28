@@ -1,0 +1,11 @@
+development: &development
+  adapter: postgresql
+  encoding: unicode
+  database: feedme
+  pool: 5
+  username: postgres
+  password:
+test:
+  <<: *development
+production:
+  <<: *development
