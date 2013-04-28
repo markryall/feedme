@@ -7,7 +7,7 @@ module Feedme
 
     use Rack::Cors do
       allow do
-        origins '*', 'file://'
+        origins /.*/
         resource '*', headers: :any, methods: [:get, :post]
       end
     end
