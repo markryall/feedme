@@ -19,7 +19,7 @@ Set up and start postgres
 
 # Adding a comment:
 
-    curl -X POST -d '{"comment":{"title":"David Jones","body":"this is my message"}}' http://localhost:9292/comments/create
+    curl -X POST -d '{"comment":{"name":"David Jones","email":"david@jones.com","body":"this is my message"}}' http://localhost:9292/comments/create
 
 ## deployment
 
