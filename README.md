@@ -14,12 +14,12 @@ Set up and start postgres
 
 # List comments:
 
-    curl http://localhost:9292/comments
+    curl http://localhost:9292/comments/asdasdasdsad
     => []
 
 # Adding a comment:
 
-    curl -X POST -d '{"comment":{"name":"David Jones","email":"david@jones.com","body":"this is my message"}}' http://localhost:9292/comments/create
+    curl -X POST -H 'Content-Type: application/json' -d '{"comment":{"slug":"asdasdasdsad", "name":"David Jones","email":"david@jones.com","body":"this is my message"}}' http://localhost:9292/comments/create
 
 ## deployment
 
@@ -32,5 +32,4 @@ Set up and start postgres
 
 ## future enhancements
 
-* actually persist comments
-* actually restore comments
+* nothing - this is just perfect the way it is
